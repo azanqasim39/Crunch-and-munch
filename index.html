@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Crunch &amp; Munch | Burgers, pizza and tacos in Satellite Town, Gujranwala</title>
+<meta name="description" content="Crunch &amp; Munch serves burgers, pizza and tacos in Satellite Town Market, Gujranwala. Strip Burger from Rs 290. Rated 4.8 on Google. Call 0313 4316840.">
+<meta name="theme-color" content="#1C130E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231C130E'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' fill='%23E0651B'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FastFoodRestaurant",
+  "name": "Crunch & Munch",
+  "servesCuisine": ["Burgers", "Pizza", "Tacos"],
+  "telephone": "+92 313 4316840",
+  "priceRange": "Rs 2,000–3,000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "337-C, near Markazi Jamia Masjid Road, Satellite Town Market Block C, Satellite Town",
+    "addressLocality": "Gujranwala",
+    "addressCountry": "PK"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "31" }
+}
+</script>
+
+<style>
+:root{
+  --espresso:#1C130E;
+  --roast:#2B1C13;
+  --cream:#F7EBDA;
+  --paper:#FFF8EE;
+  --ember:#E0651B;
+  --ember-deep:#A9440A;
+  --butter:#F4C15A;
+  --muted:#6C5646;
+  --line:#D9C6AE;
+  --font:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font);font-size:1.0625rem;line-height:1.55;
+  background:var(--espresso);color:var(--cream);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+ul,ol{list-style:none;padding:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--butter);outline-offset:3px;border-radius:6px}
+.light :focus-visible{outline-color:var(--ember-deep)}
+[id]{scroll-margin-top:84px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 clamp(18px,5vw,40px)}
+.d{font-stretch:125%;font-weight:800;letter-spacing:-.025em;line-height:1.02;text-wrap:balance}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  min-height:52px;padding:.85em 1.5em;border-radius:12px;
+  font-weight:700;font-size:1rem;line-height:1.1;text-decoration:none;cursor:pointer;
+  background:var(--ember);color:var(--espresso);border:2px solid var(--ember);
+  transition:background .18s,transform .18s,border-color .18s,color .18s;
+}
+.btn:hover{background:#F07A33;border-color:#F07A33;transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--cream);border-color:rgba(247,235,218,.45)}
+.btn.ghost:hover{background:rgba(247,235,218,.1);border-color:var(--cream)}
+.btn.dark{background:var(--espresso);border-color:var(--espresso);color:var(--cream)}
+.btn.dark:hover{background:var(--roast);border-color:var(--roast)}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- header ---------- */
+.top{
+  position:fixed;inset:0 0 auto 0;z-index:50;
+  background:rgba(28,19,14,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(247,235,218,.1);
+}
+.top-in{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-stretch:125%;font-weight:900;font-size:1.25rem;letter-spacing:-.03em;text-decoration:none;white-space:nowrap}
+.logo i{font-style:normal;color:var(--ember)}
+.nav{display:flex;align-items:center;gap:30px;font-weight:600;font-size:.98rem}
+.nav a{text-decoration:none;opacity:.85;padding:6px 0;border-bottom:2px solid transparent;transition:opacity .15s,border-color .15s}
+.nav a:hover{opacity:1;border-color:var(--ember)}
+.top .btn{min-height:44px;padding:.6em 1.1em;font-size:.95rem}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;
+  padding:calc(68px + clamp(28px,6vw,72px)) 0 clamp(48px,7vw,88px);
+  background:
+    radial-gradient(60% 60% at 74% 48%,rgba(224,101,27,.34),transparent 70%),
+    radial-gradient(40% 40% at 12% 100%,rgba(244,193,90,.1),transparent 70%),
+    var(--espresso);
+}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);align-items:center;gap:clamp(20px,4vw,64px)}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+.lede{margin-top:1.4rem;max-width:36ch;font-size:clamp(1.08rem,1.5vw,1.3rem);color:rgba(247,235,218,.86)}
+.hero .actions{margin-top:2rem}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;margin-top:clamp(28px,4vw,48px);border-top:1px solid rgba(247,235,218,.16)}
+.facts li{padding:16px 22px 0 0;margin-right:22px;border-right:1px solid rgba(247,235,218,.16)}
+.facts li:last-child{border-right:0;margin-right:0;padding-right:0}
+.facts strong{display:block;font-stretch:112%;font-weight:800;font-size:1.35rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.facts span{display:block;margin-top:.25rem;font-size:.86rem;line-height:1.3;color:rgba(247,235,218,.7)}
+
+.stage{position:relative;display:grid;place-items:center}
+#burger{width:100%;max-width:580px;height:auto;overflow:visible;filter:drop-shadow(0 30px 50px rgba(0,0,0,.35))}
+.lyr{transition:transform .25s ease-out;will-change:transform}
+.in{animation:drop .9s cubic-bezier(.2,.9,.25,1) both;animation-delay:calc(var(--i) * 90ms + 120ms)}
+@keyframes drop{from{transform:translateY(-120px);opacity:0}to{transform:none;opacity:1}}
+.float{animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* ---------- menu (cream) ---------- */
+.light{background:var(--cream);color:var(--espresso)}
+.menu{padding:clamp(64px,9vw,120px) 0}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 32px}
+.sec-head h2{font-size:clamp(2.2rem,5.2vw,4.2rem)}
+.sec-head p{max-width:34ch;color:var(--muted);font-size:1rem}
+
+.tabs{display:flex;gap:6px;margin-top:clamp(24px,4vw,40px);border-bottom:2px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  flex:0 0 auto;background:none;border:0;cursor:pointer;
+  padding:14px clamp(14px,3vw,26px);margin-bottom:-2px;border-bottom:4px solid transparent;
+  font-stretch:112%;font-weight:800;font-size:clamp(1.05rem,2.4vw,1.35rem);letter-spacing:-.01em;color:var(--muted);
+  transition:color .15s,border-color .15s;
+}
+.tab:hover{color:var(--espresso)}
+.tab[aria-selected="true"]{color:var(--espresso);border-color:var(--ember)}
+.panel{padding-top:clamp(20px,3vw,32px)}
+.panel[hidden]{display:none}
+
+.items{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(28px,6vw,80px)}
+.items li{display:flex;align-items:baseline;gap:12px;padding:1.05rem 0;font-size:clamp(1.1rem,2.2vw,1.3rem);font-weight:600}
+.items .lead{flex:1;min-width:12px;border-bottom:2px dotted #B59F86;transform:translateY(-.28em)}
+.items .price{font-stretch:112%;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.items .tagline{display:inline-block;margin-left:.6em;padding:.2em .6em;border-radius:6px;background:var(--ember);color:var(--espresso);font-size:.7em;font-weight:700;vertical-align:.15em}
+.note{margin-top:1.4rem;color:var(--muted);font-size:.95rem}
+
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,48px)}
+.tier{border-top:4px solid var(--espresso);padding-top:18px}
+.tier h3{font-stretch:118%;font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
+.flavours{margin:1rem 0 1.4rem}
+.flavours li{padding:.45rem 0;border-bottom:1px solid var(--line);font-weight:600}
+.flavours li:last-child{border-bottom:0}
+.sizes{width:100%;border-collapse:collapse;text-align:center;font-variant-numeric:tabular-nums}
+.sizes caption{text-align:left;font-size:.85rem;color:var(--muted);padding-bottom:6px}
+.sizes th{font-size:.85rem;font-weight:700;color:var(--muted);padding:6px 2px;border-bottom:1px solid var(--line)}
+.sizes td{font-stretch:108%;font-weight:800;font-size:1.05rem;padding:10px 2px 0}
+.sizes-wide td{font-size:1.1rem}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,80px)}
+.two h3{font-stretch:118%;font-weight:800;font-size:1.5rem;letter-spacing:-.02em;padding-bottom:6px;border-bottom:4px solid var(--espresso)}
+.two .items{grid-template-columns:1fr}
+
+/* ---------- big deal ---------- */
+.deal{background:var(--ember);color:var(--espresso);padding:clamp(56px,8vw,104px) 0}
+.deal-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:10px 32px}
+.deal h2{font-size:clamp(2.6rem,7vw,5.6rem)}
+.deal-head p{max-width:30ch;font-weight:600;font-size:1.1rem}
+.deal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(28px,4vw,48px);border-top:3px solid var(--espresso)}
+.deal-grid li{padding:22px 18px 4px 0;margin-right:18px;border-right:3px solid var(--espresso)}
+.deal-grid li:last-child{border-right:0;margin-right:0}
+.deal-grid span{display:block;font-weight:700;font-size:1.05rem}
+.deal-grid strong{display:block;margin-top:.3rem;font-stretch:118%;font-weight:900;font-size:clamp(1.6rem,3.4vw,2.7rem);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+
+/* ---------- visit ---------- */
+.visit{padding:clamp(64px,9vw,120px) 0;background:var(--espresso)}
+.visit-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(28px,5vw,72px);align-items:center}
+.visit h2{font-size:clamp(2.2rem,5vw,4rem)}
+.info{margin:2rem 0}
+.info div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:1rem 0;border-bottom:1px solid rgba(247,235,218,.16)}
+.info div:first-child{border-top:1px solid rgba(247,235,218,.16)}
+.info dt{color:rgba(247,235,218,.65);font-size:.95rem;padding-top:.15em}
+.info dd{font-weight:600;font-size:1.1rem}
+.info a{text-decoration-thickness:2px;text-underline-offset:4px}
+.visit-grid>*{min-width:0}
+.map{width:100%;border-radius:20px;overflow:hidden;background:var(--roast);height:clamp(280px,44vw,440px);border:1px solid rgba(247,235,218,.14)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+/* ---------- footer ---------- */
+.foot{background:#120B07;padding:34px 0;font-size:.95rem;color:rgba(247,235,218,.72)}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 32px}
+.foot .logo{color:var(--cream)}
+
+.bar{display:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .nav{display:none}
+}
+@media (max-width:860px){
+  .hero{min-height:0;padding-top:calc(68px + 20px)}
+  .hero-grid{grid-template-columns:1fr;gap:8px}
+  .stage{order:-1}
+  #burger{max-width:min(78vw,380px)}
+  .hero h1{font-size:clamp(2.35rem,10.5vw,3.4rem)}
+  .tiers{grid-template-columns:1fr}
+  .visit-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:720px){
+  .items{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .deal-grid{grid-template-columns:1fr 1fr}
+  .deal-grid li{border-right:0;margin-right:0;padding:18px 12px 14px 0;border-bottom:3px solid var(--espresso)}
+  .deal-grid li:nth-child(odd){border-right:3px solid var(--espresso);margin-right:14px}
+  .deal-grid li:nth-last-child(-n+2){border-bottom:0}
+}
+@media (max-width:760px){
+  .top .btn{display:none}
+  .bar{
+    display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(28,19,14,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-top:1px solid rgba(247,235,218,.14);
+  }
+  .bar .btn{flex:1;min-height:50px;padding:.7em 1em}
+  body{padding-bottom:78px}
+}
+@media (max-width:420px){
+  .facts{grid-template-columns:repeat(3,1fr);width:100%}
+  .facts li{padding-right:10px;margin-right:10px}
+  .facts strong{font-size:1.1rem}
+  .facts span{font-size:.78rem}
+  .info div{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .in,.float{animation:none}
+  .lyr{transition:none}
+}
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#top" aria-label="Crunch &amp; Munch, back to top">Crunch <i>&amp;</i> Munch</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#deal">Big Deal</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+923134316840">Call 0313 4316840</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div class="copy">
+        <h1 class="d">Fast food worth the crunch.</h1>
+        <p class="lede">Burgers, pizza and tacos in Satellite Town Market, Gujranwala. The Strip Burger starts at Rs 290.</p>
+        <div class="actions">
+          <a class="btn" href="#menu">See the menu</a>
+          <a class="btn ghost" href="tel:+923134316840">Call to order</a>
+        </div>
+        <ul class="facts">
+          <li><strong>4.8</strong><span>Google rating, 31 reviews</span></li>
+          <li><strong>Rs 290</strong><span>Strip Burger</span></li>
+          <li><strong>2 pm</strong><span>We open</span></li>
+        </ul>
+      </div>
+
+      <div class="stage">
+        <svg id="burger" viewBox="0 0 600 640" role="img" aria-label="A Strip Burger whose layers lift apart as you scroll">
+          <defs>
+            <radialGradient id="gTop" cx="34%" cy="22%" r="95%">
+              <stop offset="0" stop-color="#F8C772"/><stop offset=".45" stop-color="#DC8D30"/><stop offset="1" stop-color="#9F5017"/>
+            </radialGradient>
+            <linearGradient id="gBot" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#E2A24A"/><stop offset="1" stop-color="#9C5418"/>
+            </linearGradient>
+            <linearGradient id="gStrip" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#EDB04B"/><stop offset=".55" stop-color="#CF8A2B"/><stop offset="1" stop-color="#9E5A18"/>
+            </linearGradient>
+            <linearGradient id="gCheese" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#FFDB55"/><stop offset="1" stop-color="#EDA61A"/>
+            </linearGradient>
+            <linearGradient id="gTom" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#EE5A3E"/><stop offset="1" stop-color="#A5231A"/>
+            </linearGradient>
+            <linearGradient id="gLetF" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9BD65B"/><stop offset="1" stop-color="#3F8A2A"/>
+            </linearGradient>
+            <linearGradient id="gLetB" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#5FA53A"/><stop offset="1" stop-color="#2D6A20"/>
+            </linearGradient>
+            <filter id="blur6" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+            <filter id="blur3" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+            <filter id="rough" x="-6%" y="-12%" width="112%" height="124%">
+              <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="4" result="n"/>
+              <feDisplacementMap in="SourceGraphic" in2="n" scale="12"/>
+            </filter>
+            <filter id="grain" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="2" seed="8" result="t"/>
+              <feColorMatrix in="t" type="matrix" values="0 0 0 0 .36  0 0 0 0 .16  0 0 0 0 .03  0 0 0 2.4 -1.05" result="s"/>
+              <feComposite in="s" in2="SourceGraphic" operator="in"/>
+            </filter>
+          </defs>
+
+          <ellipse cx="300" cy="590" rx="210" ry="20" fill="#000" opacity=".5" filter="url(#blur6)"/>
+
+          <g class="float">
+
+            <!-- bottom bun -->
+            <g class="lyr" style="transform:translateY(calc(var(--p,0) * 46px))">
+              <g class="in" style="--i:0">
+                <path d="M104 452 H496 Q506 452 506 464 Q506 520 462 534 Q442 541 420 541 H180 Q158 541 138 534 Q94 520 94 464 Q94 452 104 452Z" fill="url(#gBot)"/>
+                <path d="M118 500 Q124 525 160 534" fill="none" stroke="#F4C98A" stroke-width="6" stroke-linecap="round" opacity=".5" filter="url(#blur3)"/>
+                <path d="M104 452 H496 Q506 452 506 464 L506 470 H94 L94 464 Q94 452 104 452Z" fill="#000" opacity=".18"/>
+              </g>
+            </g>
+
+            <!-- crispy strips -->
+            <g class="lyr" style="transform:translateY(calc(var(--p,0) * 14px))">
+              <g class="in" style="--i:1">
+                <g filter="url(#rough)">
+                  <rect x="100" y="392" width="230" height="74" rx="37" fill="url(#gStrip)" transform="rotate(-2 215 429)"/>
+                  <rect x="100" y="392" width="230" height="74" rx="37" fill="#000" filter="url(#grain)" transform="rotate(-2 215 429)"/>
+                  <rect x="268" y="404" width="232" height="74" rx="37" fill="url(#gStrip)" transform="rotate(2 384 441)"/>
+                  <rect x="268" y="404" width="232" height="74" rx="37" fill="#000" filter="url(#grain)" transform="rotate(2 384 441)"/>
+                </g>
+                <path d="M136 410 Q215 396 298 406" fill="none" stroke="#FFE3A6" stroke-width="5" stroke-linecap="round" opacity=".45" filter="url(#blur3)"/>
+                <path d="M306 422 Q390 408 470 420" fill="none" stroke="#FFE3A6" stroke-width="5" stroke-linecap="round" opacity=".4" filter="url(#blur3)"/>
+              </g>
+            </g>
+
+            <!-- cheese -->
+            <g class="lyr" style="transform:translateY(calc(var(--p,0) * -4px))">
+              <g class="in" style="--i:2">
+                <path d="M98 376 H502 L490 398 L458 398 L442 440 L420 398 H196 L176 420 L156 398 H110 Z" fill="url(#gCheese)"/>
+                <path d="M98 376 H502 L500 382 H100 Z" fill="#FFF0A6" opacity=".6"/>
+              </g>
+            </g>
+
+            <!-- tomato -->
+            <g class="lyr" style="transform:translateY(calc(var(--p,0) * -30px))">
+              <g class="in" style="--i:3">
+                <rect x="112" y="346" width="190" height="34" rx="17" fill="url(#gTom)"/>
+                <rect x="298" y="350" width="190" height="34" rx="17" fill="url(#gTom)"/>
+                <rect x="128" y="352" width="158" height="8" rx="4" fill="#FF9A82" opacity=".45"/>
+                <rect x="314" y="356" width="158" height="8" rx="4" fill="#FF9A82" opacity=".4"/>
+              </g>
+            </g>
+
+            <!-- lettuce -->
+            <g class="lyr" style="transform:translateY(calc(var(--p,0) * -62px))">
+              <g class="in" style="--i:4">
+                <path transform="translate(8 -14)" d="M82 350 q16 -34 32 -10 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 L516 350 Q300 384 82 352Z" fill="url(#gLetB)"/>
+                <path d="M80 352 q16 -34 32 -10 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 t32 0 L520 352 Q300 392 80 354Z" fill="url(#gLetF)"/>
+                <path d="M110 350 Q300 372 490 350" fill="none" stroke="#C8F08E" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+              </g>
+            </g>
+
+            <!-- top bun -->
+            <g class="lyr" style="transform:translateY(calc(var(--p,0) * -118px))">
+              <g class="in" style="--i:5">
+                <path d="M100 320 C100 202 176 140 300 140 C424 140 500 202 500 320 Q500 334 486 334 H114 Q100 334 100 320Z" fill="url(#gTop)"/>
+                <path d="M134 278 C140 218 184 176 248 160" fill="none" stroke="#FFE2A8" stroke-width="12" stroke-linecap="round" opacity=".55" filter="url(#blur3)"/>
+                <path d="M100 318 Q300 346 500 318 L500 322 Q500 334 486 334 H114 Q100 334 100 322Z" fill="#000" opacity=".16"/>
+                <g fill="#F6E4B9">
+                  <ellipse cx="214" cy="214" rx="11" ry="6" transform="rotate(-28 214 214)"/>
+                  <ellipse cx="272" cy="184" rx="11" ry="6" transform="rotate(-8 272 184)"/>
+                  <ellipse cx="336" cy="190" rx="11" ry="6" transform="rotate(14 336 190)"/>
+                  <ellipse cx="396" cy="218" rx="11" ry="6" transform="rotate(32 396 218)"/>
+                  <ellipse cx="176" cy="262" rx="11" ry="6" transform="rotate(-38 176 262)"/>
+                  <ellipse cx="244" cy="246" rx="11" ry="6" transform="rotate(-14 244 246)"/>
+                  <ellipse cx="306" cy="232" rx="11" ry="6" transform="rotate(6 306 232)"/>
+                  <ellipse cx="368" cy="252" rx="11" ry="6" transform="rotate(24 368 252)"/>
+                  <ellipse cx="434" cy="270" rx="11" ry="6" transform="rotate(40 434 270)"/>
+                  <ellipse cx="212" cy="296" rx="11" ry="6" transform="rotate(-20 212 296)"/>
+                  <ellipse cx="284" cy="284" rx="11" ry="6" transform="rotate(4 284 284)"/>
+                  <ellipse cx="352" cy="294" rx="11" ry="6" transform="rotate(20 352 294)"/>
+                  <ellipse cx="412" cy="304" rx="11" ry="6" transform="rotate(30 412 304)"/>
+                </g>
+                <g fill="#8A4510" opacity=".35">
+                  <ellipse cx="216" cy="217" rx="11" ry="5" transform="rotate(-28 216 217)"/>
+                  <ellipse cx="274" cy="187" rx="11" ry="5" transform="rotate(-8 274 187)"/>
+                  <ellipse cx="338" cy="193" rx="11" ry="5" transform="rotate(14 338 193)"/>
+                  <ellipse cx="398" cy="221" rx="11" ry="5" transform="rotate(32 398 221)"/>
+                </g>
+              </g>
+            </g>
+
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu light" id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="d">The menu</h2>
+        <p>Prices are in Rupees. Call us on 0313 4316840 to confirm today's menu and prices.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menu sections">
+        <button class="tab" role="tab" id="t-burgers" aria-controls="p-burgers" aria-selected="true">Burgers</button>
+        <button class="tab" role="tab" id="t-pizza" aria-controls="p-pizza" aria-selected="false" tabindex="-1">Pizza</button>
+        <button class="tab" role="tab" id="t-extras" aria-controls="p-extras" aria-selected="false" tabindex="-1">Tacos and extras</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-burgers" aria-labelledby="t-burgers">
+        <ul class="items">
+          <li><span>Strip Burger<span class="tagline">Menu highlight</span></span><span class="lead"></span><span class="price">Rs 290</span></li>
+          <li><span>Classic Burger</span><span class="lead"></span><span class="price">Rs 350</span></li>
+          <li><span>Chapli Burger</span><span class="lead"></span><span class="price">Rs 400</span></li>
+          <li><span>Crispy Burger</span><span class="lead"></span><span class="price">Rs 500</span></li>
+          <li><span>Double Classic Burger</span><span class="lead"></span><span class="price">Rs 600</span></li>
+          <li><span>Double Chapli Burger</span><span class="lead"></span><span class="price">Rs 650</span></li>
+          <li><span>Double Crispy Burger</span><span class="lead"></span><span class="price">Rs 800</span></li>
+          <li><span>Jumbo Burger</span><span class="lead"></span><span class="price">Rs 850</span></li>
+        </ul>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-pizza" aria-labelledby="t-pizza">
+        <div class="tiers">
+          <section class="tier">
+            <h3>Unique Taste</h3>
+            <ul class="flavours">
+              <li>Crunch &amp; Munch Special</li>
+              <li>Chicken Supreme</li>
+              <li>Milky Melt</li>
+              <li>Kababish Pizza</li>
+              <li>Spicy Chicken</li>
+              <li>Creamy Afghani Tikka</li>
+            </ul>
+            <table class="sizes">
+              <caption>Price in Rs</caption>
+              <thead><tr><th scope="col">S</th><th scope="col">M</th><th scope="col">L</th><th scope="col">XL</th></tr></thead>
+              <tbody><tr><td>550</td><td>1,290</td><td>1,890</td><td>2,690</td></tr></tbody>
+            </table>
+          </section>
+
+          <section class="tier">
+            <h3>Classic Taste</h3>
+            <ul class="flavours">
+              <li>Classic Fajita</li>
+              <li>Chicken Tikka</li>
+              <li>Chilli Chicken</li>
+              <li>Veggie Pizza</li>
+              <li>Cheese Lover</li>
+            </ul>
+            <table class="sizes">
+              <caption>Price in Rs</caption>
+              <thead><tr><th scope="col">S</th><th scope="col">M</th><th scope="col">L</th><th scope="col">XL</th></tr></thead>
+              <tbody><tr><td>500</td><td>1,150</td><td>1,690</td><td>2,450</td></tr></tbody>
+            </table>
+          </section>
+
+          <section class="tier">
+            <h3>Royal Taste</h3>
+            <ul class="flavours">
+              <li>Crunch Chicken</li>
+            </ul>
+            <table class="sizes">
+              <caption>Price in Rs</caption>
+              <thead><tr><th scope="col">S</th><th scope="col">M</th><th scope="col">L</th><th scope="col">XL</th></tr></thead>
+              <tbody><tr><td>790</td><td>1,490</td><td>2,190</td><td>3,190</td></tr></tbody>
+            </table>
+          </section>
+        </div>
+        <p class="note">S is small, M medium, L large and XL extra large.</p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-extras" aria-labelledby="t-extras">
+        <div class="two">
+          <div>
+            <h3>Tacos</h3>
+            <ul class="items">
+              <li><span>Taco Meal</span><span class="lead"></span><span class="price">Rs 550</span></li>
+              <li><span>Mexican Tacos (3 pc)</span><span class="lead"></span><span class="price">Rs 150</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Add-ons</h3>
+            <ul class="items">
+              <li><span>Dip Sauce</span><span class="lead"></span><span class="price">Rs 100</span></li>
+              <li><span>Cheese Slice</span><span class="lead"></span><span class="price">Rs 100</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG DEAL -->
+  <section class="deal light" id="deal">
+    <div class="wrap">
+      <div class="deal-head">
+        <h2 class="d">Big Deal</h2>
+        <p>Two pizzas of the same size at one price. Ask for it when you order.</p>
+      </div>
+      <ul class="deal-grid">
+        <li><span>2 Small pizzas</span><strong>Rs 990</strong></li>
+        <li><span>2 Medium pizzas</span><strong>Rs 2,190</strong></li>
+        <li><span>2 Large pizzas</span><strong>Rs 3,350</strong></li>
+        <li><span>2 XL pizzas</span><strong>Rs 4,850</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="wrap visit-grid">
+      <div>
+        <h2 class="d">Find us in Satellite Town Market.</h2>
+        <dl class="info">
+          <div><dt>Address</dt><dd>337-C, near Markazi Jamia Masjid Road, Satellite Town Market Block C, Satellite Town, Gujranwala</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+923134316840">0313 4316840</a></dd></div>
+          <div><dt>Opens</dt><dd>2 pm</dd></div>
+          <div><dt>Reviews</dt><dd>4.8 from 31 reviews on <a href="https://maps.google.com/maps?ftid=0x391f2b004d17dea3:0xb484ea001fda4b4c&hl=en&gl=pk" target="_blank" rel="noopener">Google</a></dd></div>
+        </dl>
+        <div class="actions">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=337-C%2C%20Satellite%20Town%20Market%20Block%20C%2C%20Satellite%20Town%2C%20Gujranwala" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn ghost" href="https://wa.me/923134316840?text=Hi%20Crunch%20%26%20Munch%2C%20I%27d%20like%20to%20order." target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map showing Crunch &amp; Munch in Satellite Town, Gujranwala" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=Crunch%20%26%20Munch%20Satellite%20Town%20Gujranwala&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="logo" href="#top">Crunch <i>&amp;</i> Munch</a>
+    <span>Satellite Town Market, Block C, Gujranwala</span>
+    <span>© 2026 Crunch &amp; Munch</span>
+  </div>
+</footer>
+
+<div class="bar" role="group" aria-label="Quick actions">
+  <a class="btn" href="tel:+923134316840">Call now</a>
+  <a class="btn ghost" href="#menu">Menu</a>
+</div>
+
+<script>
+(function () {
+  /* ---- menu tabs (all panels stay visible if JS is off) ---- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { select(t); });
+    t.addEventListener('keydown', function (e) {
+      var n = null;
+      if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      if (e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      if (e.key === 'Home') n = tabs[0];
+      if (e.key === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); select(n, true); }
+    });
+  });
+  select(tabs[0]);
+
+  /* ---- burger layers lift apart as the page scrolls ---- */
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var hero = document.getElementById('hero');
+  var burger = document.getElementById('burger');
+  var ticking = false;
+  function update() {
+    var r = hero.getBoundingClientRect();
+    var p = Math.min(1, Math.max(0, -r.top / (r.height * 0.75)));
+    burger.style.setProperty('--p', p.toFixed(3));
+    ticking = false;
+  }
+  addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
+</body>
+</html>
